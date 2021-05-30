@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nerko One', cursive;
+    line-height: 1.5;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: rgb(201, 197, 197);
+}
+
+/* BACKGROUND */
+.background {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9999)), url(background2.jpg) center/cover fixed;
+}
+
+/* POVRATAK NA POCETNU */
+.tekst {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    animation: pulsate 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.tekst .fas {
+    font-size: 25px;
+}
+
+.tekst a {
+    text-decoration: none;
+    color: orange;
+    font-size: 30px;
+}
+
+.tekst a:hover {
+    color: rgb(192, 183, 183);
+    transition: 1s;
+}
+
+/* STOLOVI */
+.naslov p {
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    color: rgb(177, 170, 170);
+    transform: translate(-50%, -12%); /* -50% x and y , -12% top and bottom */
+}

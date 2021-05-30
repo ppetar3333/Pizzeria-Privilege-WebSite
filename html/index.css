@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+}
+
+/* NAVIGATION BAR */
+.sidenav {
+    height: 100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    font-family: 'Nerko One', cursive;
+}
+
+.sidenav a:hover {
+    color: #111;
+    background-color: #888888;
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    font-size: 42px;
+}
+
+.sidenav .closebtn:hover {
+    font-size: 42px;
+}
+
+#main {
+    transition: 1s;
+    color: orange;
+    margin-left: 30px;
+    font-size: 55px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+}
+
+
+/* HEADER */
+.header1 {
+    min-height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1)), url(background2.jpg) center/cover fixed;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: column; /* one below the other */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
+.header2 h1 {
+    color: #B8B8B8;
+    font-size: 60px;
+    margin-top: 160px;
+    font-family: 'Nerko One', cursive;
+}
+
+.header2 a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px; /* radius of corners  */
+    padding: 18px;
+    background: orange;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.header2 a:hover {
+    background: #fff;
+    color: #181818;
+    transition: 1s;
+}
+
+.pulsate {
+    animation: pulsate 2s ease-in-out;
+    animation-iteration-count: infinite;
+    color: black;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+/* KONTAKT */
+#contact {
+    padding: 60px 20px 80px 20px;
+    background: #c8c8c8;
+}
+
+#contact a /* links in contacts */
+{
+    text-decoration: none;
+    color: #FF8C00;
+}
+
+.kontakt-naslov h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #181818;
+    font-family: 'Nerko One', cursive;
+}
+
+.kontakt-naslov .fa {
+    font-size: 29px;
+    color: #787878;
+}
+
+.contact-subtitle /* kontaktirajte nas putem */
+{
+    text-align: center;
+    color: #181818;
+    font-size: 25px;
+    padding: 70px;
+}
+
+.ci1, .ci2, .ci3 {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+.ci1 {
+    margin-left: 0;
+}
+
+.ci2 {
+    margin-left: 20%;
+}
+
+.ci3 {
+    margin-left: 17%;
+}
+
+.okvir /* ci1,ci2,ci3 */
+{
+    background: #B8B8B8;
+    padding: 20px;
+}
+
+.lokacija {
+    line-height: 2;
+    margin-top: 60px;
+    text-align: right;
+    background: #B8B8B8;
+    padding: 12px;
+    margin-left: 80%;
+}
+
+
+/* MENU */
+.menu {
+    background: #707070;
+    color: #181818;
+}
+
+.menu-image {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(basta2.jpg) center/cover fixed no-repeat;
+}
+
+.menu-text-center {
+    margin: 80px;
+    padding: 20px;
+}
+
+.menu-text-center h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    font-family: 'Nerko One', cursive;
+}
+
+.menu-text-center p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 3;
+    font-family: 'Texturina', serif;
+}
+
+.menu-text-center a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 25px;
+    background: black;
+    color: #c0c0c0;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-left: -8px;
+}
+
+.menu-text-center a:hover {
+    color: #000000;
+    background: #b0b0b0;
+    transition: 1.5s;
+}
+
+@media screen and (min-width: 776px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu-text-center {
+        flex: 0 0 20%;
+    }
+
+    .menu-image {
+        flex: 0 0 70%;
+        clip-path: polygon(0% 0, 100% 0, 55% 100%, 0 100%);
+    }
+}
+
+
+/* FOOD */
+#number {
+    font-family: 'Texturina', serif;
+}
+
+.number {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(background.jpg) center/cover no-repeat fixed;
+    padding: 60px 0; /* top bottom , left rigth */
+    color: #909090;
+}
+
+.number a {
+    text-decoration: none;
+    color: gray;
+    animation: pulsate 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+    color: #b8b8b8;
+}
+
+.number a:hover {
+    color: orange;
+    transition: 1s;
+}
+
+.number .fa, .fas {
+    font-size: 45px;
+    margin: 13px 0;
+}
+
+.number p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.number h3 {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px) {
+    #numbers {
+        display: grid;
+        grid-template-columns: 1 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #numbers {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+/* KARTA PIĆA */
+#pica {
+    padding: 20px;
+    background: #c8c8c8;
+}
+
+.kartapica {
+    color: #383838;
+    font-size: 50px;
+    text-align: center;
+    padding: 3% 0;
+    font-family: 'Nerko One', cursive;
+}
+
+.pica-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    height: 900px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+}
+
+.pica-card {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 35px;
+    filter: grayscale(0%);
+    transition: 1.2s;
+}
+
+.pica-card:hover {
+    filter: grayscale(90%);
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.pica-card:hover img {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+.pica-img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: 1.5s;
+    font-size: 30px;
+    color: #282828;
+}
+
+.img-footer {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 2s;
+    padding-bottom: 11px;
+}
+
+.pica-card:hover .img-text, .pica-card:hover .img-footer {
+    opacity: 1;
+    transition: 2s;
+}
+
+.img-footer a {
+    background: #282828;
+    color: #e8e8e8;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.img-footer a:hover {
+    background: #e8e8e8;
+    color: #282828;
+    transition: 0.5s;
+}
+
+
+/* GALERIJA HRANE */
+.galerija {
+    background: #888888;
+}
+
+.galerija h1 {
+    text-align: center;
+    color: #181818;
+    font-size: 45px;
+    padding-top: 80px;
+    font-family: 'Nerko One', cursive;
+}
+
+.galerija img {
+    width: 316px;
+    height: 290px;
+    padding: 25px;
+    margin: 60px 20px;
+    filter: grayscale(90%);
+    transition: 1.2s;
+}
+
+.galerija img:hover {
+    filter: grayscale(20%);
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+#footer {
+    background: #202020;
+    color: #c8c8c8;
+    padding: 40px 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Texturina', serif;
+}
+

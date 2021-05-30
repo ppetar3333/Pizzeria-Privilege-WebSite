@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--smaller screens-->
+    <title>Picerija Privilege</title>
+    <link rel="stylesheet" href="index.css"> <!---css file--->
+    <script src="https://kit.fontawesome.com/728cc88328.js" crossorigin="anonymous"></script>
+    <!---incons from fontawesome-->
+    <link rel="stylesheet" href="lightbox.min.css"> <!---css file for gallery-->
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script> <!---javascript for gallery-->
+</head>
+<body>
+<!-------<script> alert("Dobrodošli na sajt 'Picerija Privilege' Lajkovac "); </script> ---->
+
+<!--------navigation bar------->
+<div id="mySidenav" class="sidenav button-collapse">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">Početna</a>
+    <a href="#Kontakt">Kontakt</a>
+    <a href="#menu">Menu</a>
+    <a href="#dorucak">Hrana</a>
+    <a href="#karta">Karta Pića</a>
+    <a href="#galerija">Galerija Hrane</a>
+</div>
+
+<div id="main">
+    <span onclick="openNav()">&#9776; </span>
+    <span id="home"></span>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.99999)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<!-------end of navigation bar------>
+
+<!-----HEADER---->
+<header class="header1">
+    <div class="header2">
+        <h1>PICERIJA PRIVILEGE</h1>
+        <a href="rezervisi.html" class="pulsate"><b>REZERVIŠI STO</b></a>
+    </div>
+</header>
+<!----END OF HEADER---->
+
+<!----CONTACT---->
+<section id="contact">
+    <div class="kontakt-naslov">
+        <span id="Kontakt"> <h2> Kontakt <i class="fa fa-phone"></i></h2> </span>
+    </div>
+    <h2 class="contact-subtitle">Kontaktirajte Nas Putem:</h2>
+    <div class="okvir">
+        <p class="ci1"> Instagram-a: &nbsp; <a href="https://www.instagram.com/pizzeriaprivilege/?hl=en" target="blank"><b>@pizzeriaprivilege</b>
+        </a></p>
+        <p class="ci2"> Pozivom na broj: &nbsp; <b>014 3433 689</b></p>
+        <p class="ci3"> Facebook stranice: &nbsp; <a href="https://web.facebook.com/Pizzeria-Privilege-285599921621617"
+                                                     target="blank"> <b>Pizzeria Privilege</b></a></p>
+    </div>
+    <p class="lokacija"> Nalazimo se na adresi: <br> <big> <a
+            href="https://www.google.com/maps/place/Privilege/@44.3716053,20.1632571,17z/data=!4m12!1m6!3m5!1s0x4759f844f9c71157:0x46f0ae81fe1795d2!2sPrivilege!8m2!3d44.3716015!4d20.1654458!3m4!1s0x4759f844f9c71157:0x46f0ae81fe1795d2!8m2!3d44.3716015!4d20.1654458"
+            target="blank"><b>Kralja Petra Prvog broj 13</b></a> </big> <br> <b><big>*Lajkovac*</big></b></p>
+</section>
+<!----END OF SECTION CONTACT---->
+
+<!-----MENU---->
+<section class="menu">
+
+    <article class="menu-image"></article>
+
+    <div class="menu-text-center">
+        <span id="menu"> <h1>MENU</h1> </span>
+        <p>
+            Klikom na "Pogledaj više" možete pogledati celokupnu ponudu pića i hrane. A što se
+            tiče naše preporuke, za ručak, možemo vam preporučiti našu Privilege picu, ili punjeni pileci file,
+            ako ste za doručak, naš Privilege sendvič.
+        </p>
+        <span id="dorucak">  <a href="#"> <b>POGLEDAJ VIŠE</b> </a> </span>
+    </div>
+
+</section>
+<!----END OF SECTION MENU---->
+
+<!----FOOD---->
+<section id="numbers">
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Doručak" href="dorucak.png">
+            <i class="fa fa-egg"></i>
+            <p>5</p>
+            <h3> Doručak </h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Sendviči" href="sendvici1.png">
+            <i class="fa fa-bread-slice"></i>
+            <p>7</p>
+            <h3>Sendviči</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Burgeri" href="burger.png">
+            <i class="fa fa-hamburger"></i>
+            <p>3</p>
+            <h3>Burgeri</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Paste" href="paste.png">
+            <i class="fa fa-cloud-meatball"></i>
+            <p>2</p>
+            <h3>Paste</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Jela Po Porudzbini" href="jela.png">
+            <i class="fa fa-drumstick-bite"></i>
+            <p>7</p>
+            <h3>Jela po porudzbini</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Salate" href="salate.png">
+            <i class="fa fa-seedling"></i>
+            <p>5</p>
+            <h3>Salate</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Pizza" href="pizza.png">
+            <i class="fa fa-pizza-slice"></i>
+            <p>13</p>
+            <h3>Pizza</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Salate obroci" href="salateobroci.png">
+            <i class="fa fa-carrot"></i>
+            <p>2</p>
+            <h3>Salate obroci</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Prilozi" href="prilozi1.png">
+            <i class="fas fa-utensil-spoon"></i>
+            <p>11</p>
+            <h3>Prilozi</h3>
+        </a>
+    </article>
+
+    <article class="number">
+        <a data-lightbox="mojagalerija1" data-title="Dezerti" href="dezerti.png">
+            <i class="fa fa-ice-cream"></i>
+            <p>7</p>
+            <h3>Dezerti</h3>
+        </a>
+    </article>
+
+</section>
+<!----END OF SECTION FOOD-->
+
+<!----PIĆA---->
+<section id="pica">
+
+    <div>
+        <span id="karta"> <h1 class="kartapica"> Karta Pića </h1> </span>    <!-----span is for menubar---->
+    </div>
+
+    <div class="pica-container">
+
+        <article class="pica-card">
+            <img class="pica-img" src="kafa2.jpg" alt="">
+            <div class="img-text">
+                <h1>Kafe</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Kafe" href="kafe1.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="kafa.jpg" alt="">
+            <div class="img-text">
+                <h1>Topli I Hladni Napitci</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Topli I Hladni Napitci" href="topli.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="fruits2.jpg" alt="">
+            <div class="img-text">
+                <h1>Sveže Ceđeni Sokovi</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Sveže Ceđeni Sokovi" href="sokovi.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="fruits.jpg" alt="">
+            <div class="img-text">
+                <h1>Sokovi</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Sokovi" href="sokovikola.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="energetska.jpg" alt="">
+            <div class="img-text">
+                <h1>Energetski Napitci</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Energetski Napitci" href="energe.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="voda.jpg" alt="">
+            <div class="img-text">
+                <h1>Mineralne Vode</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Mineralne Vode" href="vode.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="pivo.jpg" alt="">
+            <div class="img-text">
+                <h1>Piva</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Piva" href="piva.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="vino.jpg" alt="">
+            <div class="img-text">
+                <h1>Vina</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Vina" href="vina.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="alkoholna pica.png" alt="">
+            <div class="img-text">
+                <h1>Alkoholna Pića</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Alkoholna Pića" href="alkoholna.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="kokteli.jpg" alt="">
+            <div class="img-text">
+                <h1>Kokteli</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Kokteli" href="koktel.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="djusvodka.jpg" alt="">
+            <div class="img-text">
+                <h1>Mešana Pića</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Mešana Pića" href="mesana.png">Pogledaj više</a>
+            </div>
+        </article>
+
+        <article class="pica-card">
+            <img class="pica-img" src="exclusive.jpg" alt="">
+            <div class="img-text">
+                <h1>Exclusive</h1>
+            </div>
+            <div class="img-footer">
+                <a data-lightbox="mojagalerija2" data-title="Exclusive" href="eks.png">Pogledaj više</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+<!----END OF SECTION PIĆA-->
+
+<!----GALERIJA---->
+<div class="galerija">
+    <span id="galerija"> <h1> Galerija Hrane </h1> </span>
+    <a data-lightbox="mojagalerija" data-title="Choco Orange" href="../html/gallery/chocoorange.jpeg"> <img
+            src="../html/gallery/chocoorange.jpeg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Bifter" href="../html/gallery/biftek.jpeg"> <img
+            src="../html/gallery/biftek.jpeg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Salata" href="../html/gallery/salata.jpg"> <img
+            src="../html/gallery/salata.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Cezar Salata" href="../html/gallery/cezarsalata2.jpg"> <img
+            src="../html/gallery/cezarsalata2.jpg" alt=""> <br> </a>
+    <a data-lightbox="mojagalerija" data-title="Panna Cotta" href="../html/gallery/dezert.jpg"> <img
+            src="../html/gallery/dezert.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Piletina U Kari Sosu" href="../html/gallery/karipiletina.jpg"> <img
+            src="../html/gallery/karipiletina.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Napolitana" href="../html/gallery/pica2.jpg"> <img
+            src="../html/gallery/pica2.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Privilege Sendvič" href="../html/gallery/privilegesendivc.jpg"> <img
+            src="../html/gallery/privilegesendivc.jpg" alt=""> <br> </a>
+    <a data-lightbox="mojagalerija" data-title="Punjeni Pileći File" href="../html/gallery/punjenifile.jpg"> <img
+            src="../html/gallery/punjenifile.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Burger" href="../html/gallery/123.jpg"> <img
+            src="../html/gallery/123.jpg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Cezar Senvič U Tortilji" href="../html/gallery/cezar123.jpeg"> <img
+            src="../html/gallery/cezar123.jpeg" alt=""> </a>
+    <a data-lightbox="mojagalerija" data-title="Cordon blue" href="../html/gallery/kordon.jpeg"> <img
+            src="../html/gallery/kordon.jpeg" alt=""> </a>
+</div>
+<!----END OF SECTION GALERIJA---->
+
+<!-----FOOTER---->
+<section id="footer">
+    Copyright &copy; 2020, Petar Petrović, All Rights Reserved, email: ppetar33@gmail.com
+</section>
+<!----END OF FOOTER---->
+
+<script src="main.js"></script>
+</body>
+</html>
